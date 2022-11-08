@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: Address Module API Automation</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>OMR Branch API Automation</td>
+      <td>28 Sep 2022, 11:47</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Address Module API Automation</td>
+          <td      class="passed"    >19</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">19</td>
+
+          <td  class="passed"    >4</td>
+          <td >0</td>
+          <td class="total">4</td>
+
+          <td class="duration" data-value="2887313200">2.887</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Address Module API Automation</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.625</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add user address to the application through api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.stepdefinition.HookClass.beforeScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header and bearer authorization for accessing address endpoints</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add request body for add new address <span class="argument">&quot;Mani&quot;</span>,<span class="argument">&quot;Raj&quot;</span>,<span class="argument">&quot;9944152058&quot;</span>,<span class="argument">&quot;Prince&quot;</span>,<span class="argument">&quot;123&quot;</span>,<span class="argument">&quot;11&quot;</span>,<span class="argument">&quot;101&quot;</span>,<span class="argument">&quot;600081&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,and <span class="argument">&quot;Home&quot;</span></span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User send <span class="argument">&quot;POST&quot;</span> request for addUserAddress endpoint</span>
+
+  <span class="lead-duration duration">0.602</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify the addUserAddress response message matches <span class="argument">&quot;Address added successfully&quot;</span></span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-4" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.stepdefinition.HookClass.afterScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-5">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-5" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;Address added successfully&quot;,
+    &quot;address_id&quot;: 26226
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.434</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify update user address to the application through api</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-7" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.stepdefinition.HookClass.beforeScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header and bearer authorization for accessing address endpoints</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add request body to update new address <span class="argument">&quot;Mani&quot;</span>,<span class="argument">&quot;Raj&quot;</span>,<span class="argument">&quot;9944152058&quot;</span>,<span class="argument">&quot;Prince&quot;</span>,<span class="argument">&quot;123&quot;</span>,<span class="argument">&quot;11&quot;</span>,<span class="argument">&quot;22&quot;</span>,<span class="argument">&quot;600081&quot;</span>,<span class="argument">&quot;Chennai&quot;</span> and <span class="argument">&quot;Home&quot;</span></span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User send <span class="argument">&quot;PUT&quot;</span> request for update addUserAddress endpoint</span>
+
+  <span class="lead-duration duration">0.410</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify the update address response message matches <span class="argument">&quot;Address updated successfully&quot;</span></span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-9" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.stepdefinition.HookClass.afterScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-10">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-10" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;Address updated successfully&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.402</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify Get User Address to the application through API</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-12" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.stepdefinition.HookClass.beforeScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add Headers and Bearer authorization for accessing Get address endpoints</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Send <span class="argument">&quot;GET&quot;</span> request for GetUserAddress endpoint</span>
+
+  <span class="lead-duration duration">0.363</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User verify the GetUserAddress response message matches <span class="argument">&quot;OK&quot;</span></span>
+
+  <span class="lead-duration duration">0.037</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-14" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.stepdefinition.HookClass.afterScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.023</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-15">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-15" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;OK&quot;,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 24072,
+            &quot;address_code&quot;: &quot;ADDnBXp2&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Ram&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9876543212&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Thoraipakkam&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 10,
+            &quot;city_id&quot;: 3,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-25 09:39:15&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-25 09:39:15&quot;,
+            &quot;city&quot;: &quot;Port Blair&quot;,
+            &quot;state&quot;: &quot;Delhi&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 24073,
+            &quot;address_code&quot;: &quot;ADDnXlQG&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Ram&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9876543212&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Thoraipakkam&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 10,
+            &quot;city_id&quot;: 3,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-25 09:41:35&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-25 09:41:35&quot;,
+            &quot;city&quot;: &quot;Port Blair&quot;,
+            &quot;state&quot;: &quot;Delhi&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25003,
+            &quot;address_code&quot;: &quot;ADDCj8B3&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;Raj&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;Prince&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 22,
+            &quot;state_id&quot;: 123,
+            &quot;city_id&quot;: 11,
+            &quot;zipcode&quot;: &quot;600081&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 07:04:15&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 07:04:15&quot;,
+            &quot;city&quot;: &quot;Akkarampalle&quot;,
+            &quot;state&quot;: &quot;Ghalizan&quot;,
+            &quot;country&quot;: &quot;Belize&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25004,
+            &quot;address_code&quot;: &quot;ADD6MVBc&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;Raj&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;Prince&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 22,
+            &quot;state_id&quot;: 123,
+            &quot;city_id&quot;: 11,
+            &quot;zipcode&quot;: &quot;600081&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 07:05:49&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 07:05:49&quot;,
+            &quot;city&quot;: &quot;Akkarampalle&quot;,
+            &quot;state&quot;: &quot;Ghalizan&quot;,
+            &quot;country&quot;: &quot;Belize&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25905,
+            &quot;address_code&quot;: &quot;ADDvJn9N&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Raj&quot;,
+            &quot;last_name&quot;: &quot;Khundra&quot;,
+            &quot;mobile&quot;: &quot;1234567898&quot;,
+            &quot;apartment&quot;: &quot;apartment&quot;,
+            &quot;address&quot;: &quot;64/63 partap nagar&quot;,
+            &quot;country_id&quot;: 101,
+            &quot;state_id&quot;: 33,
+            &quot;city_id&quot;: 3378,
+            &quot;zipcode&quot;: &quot;202020&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:10:07&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:10:07&quot;,
+            &quot;city&quot;: &quot;Jaipur&quot;,
+            &quot;state&quot;: &quot;Rajasthan&quot;,
+            &quot;country&quot;: &quot;India&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25907,
+            &quot;address_code&quot;: &quot;ADDj4zyp&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Raj&quot;,
+            &quot;last_name&quot;: &quot;Khundra&quot;,
+            &quot;mobile&quot;: &quot;1234567898&quot;,
+            &quot;apartment&quot;: &quot;apartment&quot;,
+            &quot;address&quot;: &quot;64/63 partap nagar&quot;,
+            &quot;country_id&quot;: 101,
+            &quot;state_id&quot;: 33,
+            &quot;city_id&quot;: 3378,
+            &quot;zipcode&quot;: &quot;202020&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:13:50&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:13:50&quot;,
+            &quot;city&quot;: &quot;Jaipur&quot;,
+            &quot;state&quot;: &quot;Rajasthan&quot;,
+            &quot;country&quot;: &quot;India&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25911,
+            &quot;address_code&quot;: &quot;ADDvzxtp&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Raj&quot;,
+            &quot;last_name&quot;: &quot;Khundra&quot;,
+            &quot;mobile&quot;: &quot;1234567898&quot;,
+            &quot;apartment&quot;: &quot;apartment&quot;,
+            &quot;address&quot;: &quot;64/63 partap nagar&quot;,
+            &quot;country_id&quot;: 101,
+            &quot;state_id&quot;: 33,
+            &quot;city_id&quot;: 3378,
+            &quot;zipcode&quot;: &quot;202020&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:20:08&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:20:08&quot;,
+            &quot;city&quot;: &quot;Jaipur&quot;,
+            &quot;state&quot;: &quot;Rajasthan&quot;,
+            &quot;country&quot;: &quot;India&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25918,
+            &quot;address_code&quot;: &quot;ADDdD7BG&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Raj&quot;,
+            &quot;last_name&quot;: &quot;Khundra&quot;,
+            &quot;mobile&quot;: &quot;1234567898&quot;,
+            &quot;apartment&quot;: &quot;apartment&quot;,
+            &quot;address&quot;: &quot;64/63 partap nagar&quot;,
+            &quot;country_id&quot;: 101,
+            &quot;state_id&quot;: 33,
+            &quot;city_id&quot;: 3378,
+            &quot;zipcode&quot;: &quot;202020&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:27:32&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:27:32&quot;,
+            &quot;city&quot;: &quot;Jaipur&quot;,
+            &quot;state&quot;: &quot;Rajasthan&quot;,
+            &quot;country&quot;: &quot;India&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25932,
+            &quot;address_code&quot;: &quot;ADDTQvwl&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:40:53&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:40:53&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25933,
+            &quot;address_code&quot;: &quot;ADD3Y8a9&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:40:53&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:40:53&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25934,
+            &quot;address_code&quot;: &quot;ADDiOrng&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:40:53&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:40:53&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25935,
+            &quot;address_code&quot;: &quot;ADD9TSrN&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:40:54&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:40:54&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25936,
+            &quot;address_code&quot;: &quot;ADDpFCJ7&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:40:54&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:40:54&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25937,
+            &quot;address_code&quot;: &quot;ADDBLFob&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:40:54&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:40:54&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25942,
+            &quot;address_code&quot;: &quot;ADDOuZmH&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:42:58&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:42:58&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25947,
+            &quot;address_code&quot;: &quot;ADDyYuXI&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:44:12&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:44:12&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25948,
+            &quot;address_code&quot;: &quot;ADDncDdL&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:44:12&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:44:12&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25949,
+            &quot;address_code&quot;: &quot;ADDeR6P5&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:44:12&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:44:12&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25950,
+            &quot;address_code&quot;: &quot;ADDuA6AA&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:44:13&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:44:13&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25951,
+            &quot;address_code&quot;: &quot;ADDvOZki&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:44:13&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:44:13&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25952,
+            &quot;address_code&quot;: &quot;ADDQadnK&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:44:13&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:44:13&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25953,
+            &quot;address_code&quot;: &quot;ADDUIgnq&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:44:13&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:44:13&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25954,
+            &quot;address_code&quot;: &quot;ADDSOiEj&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:44:14&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:44:14&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25955,
+            &quot;address_code&quot;: &quot;ADDilGiH&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:45:48&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:45:48&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25956,
+            &quot;address_code&quot;: &quot;ADD1Wysv&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:45:48&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:45:48&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25957,
+            &quot;address_code&quot;: &quot;ADDe2c3i&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25958,
+            &quot;address_code&quot;: &quot;ADDeCqAb&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25959,
+            &quot;address_code&quot;: &quot;ADD3gXLy&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25960,
+            &quot;address_code&quot;: &quot;ADDegc1R&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;vel&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25961,
+            &quot;address_code&quot;: &quot;ADDUgmMJ&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;vel&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:45:49&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 25962,
+            &quot;address_code&quot;: &quot;ADDdD3Gz&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;vel&quot;,
+            &quot;last_name&quot;: &quot;J&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;AK&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 103,
+            &quot;state_id&quot;: 12,
+            &quot;city_id&quot;: 12,
+            &quot;zipcode&quot;: &quot;600097&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-27 21:45:50&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-27 21:45:50&quot;,
+            &quot;city&quot;: &quot;Akkayapalle&quot;,
+            &quot;state&quot;: &quot;Gujarat&quot;,
+            &quot;country&quot;: &quot;Iran&quot;,
+            &quot;is_selected&quot;: 0
+        },
+        {
+            &quot;id&quot;: 26226,
+            &quot;address_code&quot;: &quot;ADDqF9v3&quot;,
+            &quot;user_id&quot;: 987,
+            &quot;first_name&quot;: &quot;Mani&quot;,
+            &quot;last_name&quot;: &quot;Raj&quot;,
+            &quot;mobile&quot;: &quot;9944152058&quot;,
+            &quot;apartment&quot;: &quot;Prince&quot;,
+            &quot;address&quot;: &quot;Chennai&quot;,
+            &quot;country_id&quot;: 22,
+            &quot;state_id&quot;: 35,
+            &quot;city_id&quot;: 3556,
+            &quot;zipcode&quot;: &quot;600081&quot;,
+            &quot;lat&quot;: null,
+            &quot;lng&quot;: null,
+            &quot;default&quot;: 0,
+            &quot;status&quot;: &quot;AC&quot;,
+            &quot;address_type&quot;: &quot;Home&quot;,
+            &quot;created_at&quot;: &quot;2022-09-28 11:47:05&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-28 11:47:05&quot;,
+            &quot;city&quot;: &quot;Adikaratti&quot;,
+            &quot;state&quot;: &quot;Tamil Nadu&quot;,
+            &quot;country&quot;: &quot;Belize&quot;,
+            &quot;is_selected&quot;: 0
+        }
+    ]
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.424</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify Delete User Address to the application through API</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-17" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.stepdefinition.HookClass.beforeScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header and bearer authorization for accessing address endpoints</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add request body for address id</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User Send <span class="argument">&quot;DELETE&quot;</span> request for DeleteAddress endpoint</span>
+
+  <span class="lead-duration duration">1.397</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User verify the DeleteAddress response message matches <span class="argument">&quot;Address deleted successfully&quot;</span></span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-19" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.stepdefinition.HookClass.afterScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-20">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-20" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;Address deleted successfully&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
